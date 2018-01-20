@@ -1,0 +1,38 @@
+﻿class FlightAttendant extends FullName {
+    private _originCountry: string;
+    private _seniority: number;
+    private _unit: string;
+
+    public set originCountry(originCountry: string) {
+        this._originCountry = originCountry;
+    }
+
+    public get originCountry(): string {
+        return this._originCountry;
+    }
+
+    public set unit(unit: string) {
+        if (unit == "buisness" || unit == "economy" || unit == "first class")
+        this._unit = unit;
+    }
+
+    public get unit(): string {
+        return this._unit;
+    }
+
+    public set seniority(seniority: number) {
+        this._seniority = seniority;
+    }
+
+    public get seniority(): number {
+        return this._seniority;
+    }
+
+    public printInfo(): void {
+        document.write("flightAttendant<br/>");
+
+        super.printInfo();
+        document.write("origin country: " + this._originCountry + "<br/>senyority: " + this._seniority + "<br/>" + "unit: " + this._unit + "<br/><br/>");
+
+    }
+}
