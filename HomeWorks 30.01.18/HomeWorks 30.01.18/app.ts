@@ -3,10 +3,13 @@ let iFlyArr: Array<IFly> = new Array<IFly>(10);
 
 for (let i: number = 0; i < iFlyArr.length; i++) {
     iFlyArr[i] = createFly();
-  //  if (iFlyArr instanceof Bird) {
+ 
         iFlyArr[i].fly(10);
         iFlyArr[i].land();
-//  //  }
+
+  //  if (iFlyArr instanceof Bird) {
+//        (iFlyArr[i] as Bird).fly(20);
+//       (iFlyArr[i] as Bird).land();
 
 // //   if (iFlyArr instanceof Airplane) {
 //        (iFlyArr[i] as Airplane).fly(20);
