@@ -1,0 +1,16 @@
+#main{
+        margin-left: 40%;
+}
+
+h3{
+    font-size: 1.5em;
+    color: aqua;
+}
+
+tr:nth-child(odd) td {
+    background-color: #81DAF5;
+}
+
+tr:nth-child(even) td {
+    background-color: #CEECF5;
+}

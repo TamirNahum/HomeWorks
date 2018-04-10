@@ -1,0 +1,18 @@
+<div id="main">
+<h3>current piiza orders:</h3>
+<table border="=1">
+    <tr>
+        <td>diameter</td>
+        <td>slices</td>
+        <td>toppings</td>
+        <td>price</td>
+      </tr>
+
+  <tr *ngFor="let i of pizzaArray;">
+    <td>{{i.diameter}}cm</td>
+    <td>{{i.slices}}</td>
+    <td>{{i.toppings}}</td>
+    <td>{{i.price}}.00$</td>
+  </tr>
+</table>
+</div>
