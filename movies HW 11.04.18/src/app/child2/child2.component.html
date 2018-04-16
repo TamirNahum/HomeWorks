@@ -1,0 +1,12 @@
+
+<h2> {{selectedMovie.id}}.
+  {{selectedMovie.movie_name}}
+</h2>
+<h3>
+    {{selectedMovie.price}}$<br/>
+    <small>
+    {{selectedMovie.movie_date}}
+  </small>
+</h3>
+
+<p *ngIf="selectedMovie==undefined">no movie selected </p>

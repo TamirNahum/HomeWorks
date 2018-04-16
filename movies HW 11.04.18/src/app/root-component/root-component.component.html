@@ -1,0 +1,15 @@
+
+<div *ngFor="let x of moviesArray">
+    <app-child1 
+    [movie]="x"
+    (movieEmitter)="onChildMovieSelected($event)"
+    ></app-child1>
+</div>
+
+<div>
+<app-child2 [selectedMovie]="getSelectedMovie()"
+
+ >
+
+</app-child2>
+</div>
