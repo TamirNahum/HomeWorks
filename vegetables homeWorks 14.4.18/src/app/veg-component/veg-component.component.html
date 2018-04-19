@@ -1,0 +1,35 @@
+<h1>vegetables list:</h1>
+<br/>
+
+<div [ngSwitch]="state">
+    <div *ngSwitchCase="true">
+        <input class="form-control" type="text" placeholder="enter the first letter" [(ngModel)]="currentLetter">
+        
+    </div>
+    <div *ngSwitchCase="false">
+        <div class="form-group has-error">
+            <input type="text" class="form-control" id="inputError1" placeholder="enter only 1 letter" [(ngModel)]="currentLetter">
+          </div>
+          <p  class="bg-danger">  you cant enter more than 1 letter</p>
+    </div>
+<div>
+
+
+  <button type="button" class="btn btn-primary" (click)="vegArrToString()">submit</button>
+
+
+<div [ngSwitch]="state">
+    <div *ngSwitchCase="true">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let x of newVegArr">{{x}}</li>
+          </ul>
+    </div>
+
+
+   <div *ngSwitchCase="false">
+      
+
+    </div>
+
+<div>
+
