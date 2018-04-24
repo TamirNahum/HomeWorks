@@ -1,0 +1,25 @@
+<table class="table table-striped">
+  <tr class="table-headers">
+       <td></td>
+      <td>articale type</td>
+      <td>author display</td>
+      <td>score</td>
+  </tr>
+  <tbody>
+
+  <tr *ngFor="let x of Articales let i=index">
+      <td>
+        <button (click)="myFunc(x)">choose {{x.article_type}}</button>
+      </td>
+    <td>{{x.article_type}}</td>
+  
+  
+    <td>{{x.author_display}}</td>
+
+    <td>  {{x.score}}</td>
+
+
+  </tr>
+
+</tbody>
+</table>
