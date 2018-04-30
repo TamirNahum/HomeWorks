@@ -1,0 +1,5 @@
+<div *ngFor="let x of avatarArray.data">
+   <p> {{x.id}}.  {{x.first_name}} {{x.last_name}} </p>
+  
+   <img [src]="x.avatar"/>
+</div>
